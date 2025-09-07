@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pre-TGE Projects</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Pre-TGE Projects</h1>
+    <div class="controls">
+      <input type="file" id="upload" accept="image/*" multiple />
+      <button id="download">Download</button>
+      <button id="clear">Clear All</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Tierlist (left) -->
+    <div id="tier-list">
+      <div class="tier"><span class="label S">S</span><div class="dropzone"></div></div>
+      <div class="tier"><span class="label A">A</span><div class="dropzone"></div></div>
+      <div class="tier"><span class="label B">B</span><div class="dropzone"></div></div>
+      <div class="tier"><span class="label C">C</span><div class="dropzone"></div></div>
+    </div>
+
+    <!-- Gallery (right) -->
+    <section id="gallery">
+      <h2>Available Projects</h2>
+      <div id="project-pool" class="dropzone">
+        <img src="assets/abstract.jpg" class="draggable" draggable="true" title="Abstract">
+        <img src="assets/kite.jpg" class="draggable" draggable="true" title="Kite">
+        <img src="assets/zama.jpg" class="draggable" draggable="true" title="Zama">
+        <img src="assets/arcium.jpg" class="draggable" draggable="true" title="Arcium">
+        <img src="assets/plasma.jpg" class="draggable" draggable="true" title="Plasma">
+        <img src="assets/fluent.jpg" class="draggable" draggable="true" title="Fluent">
+        <img src="assets/mega.jpg" class="draggable" draggable="true" title="Mega">
+        <img src="assets/mavryk.jpg" class="draggable" draggable="true" title="Mavryk">
+        <img src="assets/momentum.png" class="draggable" draggable="true" title="Momentum">
+        <img src="assets/0g.jpg" class="draggable" draggable="true" title="0g">
+        <img src="assets/turtle.png" class="draggable" draggable="true" title="Turtle">
+        <img src="assets/katana.jpg" class="draggable" draggable="true" title="Katana">
+        <img src="assets/boundless.jpg" class="draggable" draggable="true" title="Boundless">
+        <img src="assets/sentient.jpg" class="draggable" draggable="true" title="Sentient">
+        <img src="assets/aztec.jpg" class="draggable" draggable="true" title="Aztec">
+        <img src="assets/irys.jpg" class="draggable" draggable="true" title="Irys">
+        <img src="assets/anoma.jpg" class="draggable" draggable="true" title="Anoma">
+        <img src="assets/billions.jpg" class="draggable" draggable="true" title="Billions">
+        <img src="assets/monad.jpg" class="draggable" draggable="true" title="Monad">
+      </div>
+    </section>
+  </main>
+
+  <!-- ONE library, loaded before your script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
